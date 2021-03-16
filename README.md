@@ -1,2 +1,2 @@
 # VieiraDev
-Home page. Check what I'm currently working on!
+Home page. Check out what I'm currently working on!
