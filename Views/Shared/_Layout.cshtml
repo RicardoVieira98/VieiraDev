@@ -1,74 +1,135 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - VieiraDev</title>
-
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>VieiraDev- Ricardo Vieira in Software Development</title>
+    <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="~/css/nucleo.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/argon.min.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+    <header class="header-global">
+        <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
+            <div class="container">
+                <a class="navbar-brand mr-lg-5" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">VieiraDev</a>
+                <div class="navbar-collapse collapse" id="navbar_global">
+                    <div class="navbar-collapse-header">
+                        <div class="row">
+                            <div class="col-6 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                <i class="ni ni-ui-04 d-lg-none"></i>
+                                <span class="nav-link-inner--text">Components</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-xl">
+                                <div class="dropdown-menu-inner">
+                                    <a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html" class="media d-flex align-items-center">
+                                        <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                                            <i class="ni ni-spaceship"></i>
+                                        </div>
+                                        <div class="media-body ml-3">
+                                            <h6 class="heading text-primary mb-md-1">Getting started</h6>
+                                            <p class="description d-none d-md-inline-block mb-0">Get started with Bootstrap, the world's most popular framework for building responsive sites.</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="media d-flex align-items-center">
+                                        <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                                            <i class="ni ni-ui-04"></i>
+                                        </div>
+                                        <div class="media-body ml-3">
+                                            <h5 class="heading text-warning mb-md-1">Components</h5>
+                                            <p class="description d-none d-md-inline-block mb-0">Learn how to use Argon compiling Scss, change brand colors and more.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                                <i class="ni ni-collection d-lg-none"></i>
+                                <span class="nav-link-inner--text">Examples</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="../examples/landing.html" class="dropdown-item">Landing</a>
+                                <a href="../examples/profile.html" class="dropdown-item">Profile</a>
+                                <a href="../examples/login.html" class="dropdown-item">Login</a>
+                                <a href="../examples/register.html" class="dropdown-item">Register</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="position-relative">
+            <section class="section-shaped my-0">
+                <div class="shape shape-style-1 bg-gradient-warning shape-default shape-skew" style="transform: skewY(-5deg); height: 90%"></div>
+                <div class="container shape-container d-flex">
+                    <div class="col px-0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h1 class="display-3 text-white">
+                                    Ricardo Vieira Gordo
+                                    <span>Software Developer</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </nav>
-
-    <partial name="_CookieConsentPartial" />
-
-    <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2021 - VieiraDev</p>
-        </footer>
-    </div>
-
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
-
+    </main>
+    <footer class="footer">
+            <hr>
+            <div class="row align-items-center justify-content-md-between p-2">
+                <div class="col-md-6">
+                    <div class="copyright">
+                        &copy; 2018
+                        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav nav-footer justify-content-end">
+                        <li class="nav-item">
+                            <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
     @RenderSection("Scripts", required: false)
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/headroom.min.js"></script>
+    <script src="~/js/argon.min.js"></script>
 </body>
+
 </html>
